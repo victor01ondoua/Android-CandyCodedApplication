@@ -1,5 +1,6 @@
 package com.pluralsight.candycoded;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -27,7 +28,16 @@ public class InfoActivity extends AppCompatActivity {
     // TODO - Task 2 - Launch the Google Maps Activity
     // ***
 
+    
+
     // ***
     // TODO - Task 3 - Launch the Phone Activity
     // ***
+
+    public void createPhoneIntent(){
+
+        Intent phoneIntent = new Intent(Intent.EXTRA_PHONE_NUMBER);
+        startActivity(phoneIntent);
+    }
+
 }
